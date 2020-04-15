@@ -27,33 +27,33 @@ public class EmployeemsApplication {
 		return bCryptPasswordEncoder;
 	}
 
-	@Bean
-	CommandLineRunner init(RoleRepository roleRepository, UserRepository userRepository) {
-		return args -> {
-
-			Role userRole = roleRepository.findByRole("admin");
-			if (userRole == null) {
-				userRole = new Role();
-				userRole.setRole("admin");
-			
-				roleRepository.save(userRole);
-			}
-
-			User user = userRepository.findByUserName("amit");
-			if (user == null) {
-				user = new User();
-				user.setName("amitabh");
-				user.setActive(true);
-				user.setEmail("aa@aa.com");
-				user.setAddress("New Delhi Area");
-				user.setPassword("$2a$10$7PtcjEnWb/ZkgyXyxY1/Iei2dGgGQUbqIIll/dt.qJ8l8nQBWMbYO");
-				user.setMobile("9832938923");
-				user.setLastName("Singh");
-				user.setUserName("Raman");
-				user.setRoles(new HashSet(Arrays.asList(userRole)));
-				userRepository.save(user);
-			}
-
-		};
-	}
+	
+//	CommandLineRunner init(RoleRepository roleRepository, UserRepository userRepository) {
+//		return args -> {
+//
+//			Role userRole = roleRepository.findByRole("admin");
+//			if (userRole == null) {
+//				userRole = new Role();
+//				userRole.setRole("admin");
+//			
+//				roleRepository.save(userRole);
+//			}
+//
+//			User user = userRepository.findByUserName("amit");
+//			if (user == null) {
+//				user = new User();
+//				user.setName("amitabh");
+//				user.setActive(true);
+//				user.setEmail("aa@aa.com");
+//				user.setAddress("New Delhi Area");
+//				user.setPassword("$2a$10$7PtcjEnWb/ZkgyXyxY1/Iei2dGgGQUbqIIll/dt.qJ8l8nQBWMbYO");
+//				user.setMobile("9832938923");
+//				user.setLastName("Singh");
+//				user.setUserName("Raman");
+//				user.setRoles(new HashSet(Arrays.asList(userRole)));
+//				userRepository.save(user);
+//			}
+//
+//		};
+//	}
 }

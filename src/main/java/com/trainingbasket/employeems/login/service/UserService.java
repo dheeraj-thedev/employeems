@@ -1,6 +1,5 @@
 package com.trainingbasket.employeems.login.service;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 
@@ -16,11 +15,10 @@ import com.trainingbasket.employeems.login.repository.UserRepository;
 @Service
 public class UserService {
 
-	@Autowired
 	private UserRepository userRepository;
-	@Autowired
+
 	private RoleRepository roleRepository;
-	@Autowired
+
 	private BCryptPasswordEncoder bCryptPasswordEncoder;
 
 	@Autowired
@@ -41,9 +39,10 @@ public class UserService {
 
 	public User saveUser(User user) {
 		user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
+		
 		user.setActive(true);
-		Role role = roleRepository.findByRole("admin");
-		user.setRoles(new HashSet<Role>(Arrays.asList(role)));
+		Role userRole = roleRepository.findByRole("ADMIN");
+		user.setRoles(new HashSet<Role>(Arrays.asList(userRole)));
 		return userRepository.save(user);
 	}
 

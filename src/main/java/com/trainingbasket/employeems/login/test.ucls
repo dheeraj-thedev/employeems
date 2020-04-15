@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.3" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <package id="1" language="java" name="com.trainingbasket.employeems.login.configuration" project="employeems" 
+    file="/employeems/src/main/java/com/trainingbasket/employeems/login/configuration" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="303" y="216"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="2" language="java" name="com.trainingbasket.employeems.login.controller" project="employeems" 
+    file="/employeems/src/main/java/com/trainingbasket/employeems/login/controller" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="290" y="292"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="3" language="java" name="com.trainingbasket.employeems.login.model" project="employeems" 
+    file="/employeems/src/main/java/com/trainingbasket/employeems/login/model" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="284" y="361"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="4" language="java" name="com.trainingbasket.employeems.login.repository" project="employeems" 
+    file="/employeems/src/main/java/com/trainingbasket/employeems/login/repository" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="296" y="443"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="5" language="java" name="com.trainingbasket.employeems.login.service" project="employeems" 
+    file="/employeems/src/main/java/com/trainingbasket/employeems/login/service" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="281" y="132"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
